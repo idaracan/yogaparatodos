@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+	<link href="css/custom.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body style="background-color:#D3D3D3;">
 	<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper" class="active">
         <ul class="sidebar-nav">
@@ -49,52 +49,143 @@
             </li>
         </ul>
     </nav>
-    
+
     <div id="InfoGeneral">
-    <section class = "container" id="start" style="min-width: 500px;">
-		<div>
-			<!--Container content-->
-			<h2>Eslogan</h2>
-			<div class="form-group">
-			  <label for="usr">Name:</label>
-			  <input type="text" class="form-control" id="usr"></input>
-			</div>
-			
-		</div>
-    </section>
-    
-    <section class = "container" id="acerca_de" style="min-width: 500px;">
-		<div>
-			<!--Container content-->
-			<h2>Acerca de:</h2>
-			<div class="form-group">
-			  <label for="usr">Cambiar Sección «Acerca de Nosotras»</label>
-			  <textarea class="form-control" id="AcercaDe" rows="2"></textarea>
-			</div>
-			
-		</div>
-    </section>
-    
-    <section class = "container" id="contacto" style="min-width: 500px;">
-		<div>
-			<!--Container content-->
-			<h2>Contacto:</h2>
-			<div class="form-group">
-			  Dirección:
-			  <input type="text" class="form-control" id="dir"></input>
-			  Teléfono:
-			  <input type="text" class="form-control" id="tel"></input>
-			  Correo:
-			  <input type="text" class="form-control" id="mail"></input>
-			</div>
-		</div>
-    </section>
+		<!-- Sección del eslogan-->
+  		<section class = "container" id="start" style="min-width: 500px;">
+  			<div class="panel panel-default" style="width:70%">
+  				<div class="panel heading">
+  					<h2>Eslogan</h2>
+  				</div>
+  				<div class="form-group">
+  					<!-- Puede ir el eslogan actual acá-->
+  					<input type="text" class="form-control" id="usr">
+  					<button class="btn btn-default" type="submit">Actualizar</button>
+  				</div>
+  			</div>
+  		</section>
+
+    		<!--Seccion ACERCA DE-->
+  		<section class = "container" id="acerca_de" style="min-width: 500px;">
+  			<div class="panel panel-default" style="width:70%">
+  				<div class="panel heading">
+  					<h2>Acerca de:</h2>
+  				</div>
+  				<div class="form-group">
+  				  <label for="usr">Cambiar Sección «Acerca de Nosotras»</label>
+  				  <textarea class="form-control" id="AcercaDe" rows="2"></textarea>
+  				  <button class="btn btn-default" type="submit">Actualizar</button>
+  				</div>
+  			</div>
+  		</section>
+
+  		<!--Container content-->
+  		<section class = "container" id="contacto" style="min-width: 500px;">
+  			<div class="panel panel-default" style="width:70%">
+  				<div class="panel heading">
+  					<h2>Contacto:</h2>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-4">
+  					  Dirección:<br>
+  					  <input type="text" class="form-control" id="dir" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  					<div class="col-sm-4">
+  					  Teléfono:<br>
+  					  <input type="text" class="form-control" id="tel" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  					<div class="col-sm-4">
+  					  Correo:<br>
+  					  <input type="text" class="form-control" id="mail" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-4">
+  					  Ciudad:<br>
+  					  <input type="text" class="form-control" id="ciudad" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  					<div class="col-sm-4">
+  					  Red Social 1:<br>
+  					  <input type="text" class="form-control" id="socnet" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  					<div class="col-sm-4">
+  					  Red Social 2:<br>
+  					  <input type="text" class="form-control" id="socnet2" style="float:left;width:30%;min-width:200px">
+  					  <button class="btn btn-default" type="submit" style="float:left;">Actualizar</button>
+  					</div>
+  				</div>
+  			</div>
+  		</section>
     </div>
-    
+
     <div id="Servicios" style="display:none">
-    Progresando
-    </div>
-    
+		<section class = "container" id="listaservicios" style="min-width: 500px;">
+			<div class="panel panel-default" style="width:70%">
+		  <!-- Default panel contents -->
+				<div class="panel-heading">Tablero de Servicios</div>
+			  <!-- Table -->
+				<table class="table">
+				<!--AÑADIR LOS CAMPOS-->
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Descripción</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<!-- los nombres y descripciones se toman de una db-->
+							<td>Nombre de la actividad, cambiar después</td>
+							<td>Descripción de la actividad</td>
+							<td>
+								<!--Cuando se haga clic en cog, un menú
+								con campos de texto será visible y se podrán
+								modificar los nombres, la descripción y una imagen asociada
+								la imagen vendrá de un sitio externo-->
+								<a class="glyphicon glyphicon-cog"></a>
+								<a class="glyphicon glyphicon-remove"></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a class="glyphicon glyphicon-plus" onclick="bringDown()"></a></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class = "center" id="modifymenu">
+			<form class="form-inline">
+        <row>
+  			  <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre de la actividad" style="padding-left:5%;">
+  			  <div class="input-group">
+  				<div class="input-group-addon">url</div>
+  				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ruta de la imagen">
+  			  </div>
+        </row>
+
+        <row>
+  			  <div class="form-check">
+  				      <textarea id="newdescrip" class="form-control" rows="2" style="width:95%;"> </textarea>
+  			  </div>
+        </row>
+
+        <row>
+             <button type="submit" class="btn btn-primary">Submit</button>
+             <button type="submit" class="btn btn-danger">Cancelar</button>
+        </row>
+			</form>
+		</section>
+	</div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -103,6 +194,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
+    // Moves a div downwards
+    function bringDown(){
+        document.getElementById("modifymenu").classList.add('movement');
+    }
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -115,15 +210,15 @@
     });
     //toggles visibility for IngormacionGeneral
     function togglevis(id){
-		if (id == "services") {
-			$("#InfoGeneral").css("display", "none");
-			$("#Servicios").css("display", "inline");
-			/*$("#InfoGeneral").setHidden(true);
-			$("#Servicios").setHidden(false);*/
-		} else if (id == "infogen"){
-			$("#Servicios").css("display","none");
-			$("#InfoGeneral").css("display","inline");
-		}
+    		if (id == "services") {
+    			$("#InfoGeneral").css("display", "none");
+    			$("#Servicios").css("display", "inline");
+    			/*$("#InfoGeneral").setHidden(true);
+    			$("#Servicios").setHidden(false);*/
+    		} else if (id == "infogen"){
+    			$("#Servicios").css("display","none");
+    			$("#InfoGeneral").css("display","inline");
+    		}
 	}
     // Scrolls to the selected menu item on the page
     $(function() {
