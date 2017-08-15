@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans', sans-serif;//"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -237,20 +237,5 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
-}
-//added by ivan
-.well {
-  color: black;
-}
-.not-selected .fa-facebook {
-  color: red
-}
-.not-selected .fa-twitter {
-  color: green
-}
-.selected {
-  background-color: #004b89;
-  color: white;
-  font-weight: bold;
+    padding: 0;
 }
