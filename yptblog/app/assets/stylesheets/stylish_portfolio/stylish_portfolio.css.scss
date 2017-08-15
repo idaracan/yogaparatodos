@@ -214,6 +214,8 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    //color: black;
+
 }
 
 .call-to-action .btn {
@@ -236,4 +238,19 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+//added by ivan
+.well {
+  color: black;
+}
+.not-selected .fa-facebook {
+  color: red
+}
+.not-selected .fa-twitter {
+  color: green
+}
+.selected {
+  background-color: #004b89;
+  color: white;
+  font-weight: bold;
 }
