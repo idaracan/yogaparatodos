@@ -3,4 +3,5 @@
  *= require font_awesome
  *= require stylish_portfolio/stylish_portfolio
  *= require_self
+ *= require stylish_portfolio/custom
 */

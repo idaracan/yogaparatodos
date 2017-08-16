@@ -1,3 +1,20 @@
-.list-inline {
+.well {
+  color: black;
+}
+.not-selected .fa-facebook {
+  color: red
+}
+.not-selected .fa-twitter {
+  color: green
+}
+.selected {
+  background-color: #004b89;
   color: white;
+  font-weight: bold;
+}
+h1, h2{
+  font-family: 'Dosis', sans-serif;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
 }
