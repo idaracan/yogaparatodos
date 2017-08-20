@@ -1,0 +1,15 @@
+Started GET "/" for 127.0.0.1 at 2017-08-20 16:08:07 -0500
+Processing by StylishPortfoliosController#index as HTML
+  Rendering stylish_portfolios/index.html.erb within layouts/stylish_portfolio
+  Rendered stylish_portfolios/_navigation.html.erb (0.2ms)
+  Rendered stylish_portfolios/_header.html.erb (0.1ms)
+  Rendered stylish_portfolios/_about.html.erb (3357.8ms)
+  Rendered stylish_portfolios/_services.html.erb (1.8ms)
+  Rendered stylish_portfolios/_callout.html.erb (0.2ms)
+  Rendered stylish_portfolios/_portfolio.html.erb (1.8ms)
+  Rendered stylish_portfolios/_contactus-alt.html.erb (0.2ms)
+  Rendered stylish_portfolios/_footeralt.html.erb (0.2ms)
+  Rendered stylish_portfolios/index.html.erb within layouts/stylish_portfolio (3366.7ms)
+Completed 200 OK in 3757ms (Views: 3598.4ms)
+
+
