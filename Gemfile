@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'frontend-generators'
 gem 'jquery-rails', "~> 4.3.1"
 gem 'bower-rails'
+gem 'font_assets'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
