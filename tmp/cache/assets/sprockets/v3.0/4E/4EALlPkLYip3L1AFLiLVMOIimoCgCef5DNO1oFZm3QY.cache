@@ -1,0 +1,7 @@
+I"d(function() {
+  var servicios;
+
+  servicios = angular.module('servicios', []);
+
+}).call(this);
+:ET
