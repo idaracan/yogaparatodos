@@ -1,15 +1,28 @@
 <div id="InfoGeneral">
+
 	<!-- Sección del eslogan-->
 	<section class = "container" id="start" style="min-width: 500px;">
 		<div class="panel panel-default" style="width:70%">
 			<div class="panel heading">
 				<h2>Eslogan</h2>
 			</div>
+			<%=form_for :slogan, url: slogans_path do |f| %>
+				<p>
+					<%= f.label :text %><br>
+					<%= f.text_area :text, :class =>'form-control' %>
+				</p>
+
+				<p>
+					<%= f.submit 'Guardar Eslogan' , :class => 'btn btn-default' %>
+				</p>
+		<% end %>
+			<!--
 			<div class="form-group">
-				<!-- Puede ir el eslogan actual acá-->
+				 Puede ir el eslogan actual acá
 				<input type="text" class="form-control" id="usr">
 				<button class="btn btn-default" type="submit">Actualizar</button>
 			</div>
+			-->
 		</div>
 	</section>
 
@@ -21,8 +34,16 @@
 			</div>
 			<div class="form-group">
 				<label for="usr">Cambiar Sección «Acerca de Nosotras»</label>
-				<textarea class="form-control" id="AcercaDe" rows="2"></textarea>
-				<button class="btn btn-default" type="submit">Actualizar</button>
+				<%=form_for :description, url: descriptions_path do |f| %>
+					<p>
+						<%= f.label :text %><br>
+						<%= f.text_area :text, :class =>'form-control' %>
+					</p>
+
+					<p>
+						<%= f.submit 'Guardar' , :class => 'btn btn-default' %>
+					</p>
+			<% end %>
 			</div>
 		</div>
 	</section>
