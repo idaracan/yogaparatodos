@@ -3,5 +3,6 @@ class StylishPortfoliosController < ApplicationController
 
   def index
     @eslogan = Slogan.last
+    @description = Description.last
   end
 end

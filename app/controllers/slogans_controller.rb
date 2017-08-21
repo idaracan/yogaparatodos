@@ -9,6 +9,12 @@ class SlogansController < ApplicationController
     @slogan.save
     redirect_to root_path
   end
+  def destroy
+    @slogan = Slogan.find(params[:id])
+    @slogan.destroy
+
+    redirect_to root_path
+  end
   private
   def slogan_params
     params.require(:slogan).permit(:text)
