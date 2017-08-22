@@ -13,9 +13,10 @@
     left: 25%;
     animation-duration: 3s;
     top: -50%;
+		background-color: gray;
 }
 
-.center.movement {
+.movement {
     -webkit-transition: 3s;
     -moz-transition: 3s;
     -ms-transition: 3s;
@@ -23,5 +24,8 @@
     transition: 3s;
     top: 30% !important;
     box-shadow: 1px 1px 100px;
-    background-color: white;
+}
+
+.Servicios {
+	display: none;
 }

@@ -1,0 +1,62 @@
+<div id="Servicios">
+		<section class = "container" id="listaservicios" style="min-width: 500px;">
+			<div class="panel panel-default" style="width:70%">
+		  <!-- Default panel contents -->
+				<div class="panel-heading">Tablero de Servicios</div>
+			  <!-- Table -->
+				<table class="table">
+				<!--AÑADIR LOS CAMPOS-->
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Descripción</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<!-- los nombres y descripciones se toman de una db-->
+							<td>Nombre de la actividad, cambiar después</td>
+							<td>Descripción de la actividad</td>
+							<td>
+								<!--Cuando se haga clic en cog, un menú
+								con campos de texto será visible y se podrán
+								modificar los nombres, la descripción y una imagen asociada
+								la imagen vendrá de un sitio externo-->
+								<a class="glyphicon glyphicon-cog"></a>
+								<a class="glyphicon glyphicon-remove"></a>
+							</td>
+						</tr>
+						<tr>
+							<td><a class="glyphicon glyphicon-plus" id="AddService"></a></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class = "center" id="modifymenu">
+			<form class="form-inline">
+        <row>
+  			  <input type="text" class="form-control" id="inlineFormInput" placeholder="Nombre de la actividad" style="padding-left:5%;">
+  			  <div class="input-group">
+  				<div class="input-group-addon">url</div>
+  				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ruta de la imagen">
+  			  </div>
+        </row>
+
+        <row>
+  			  <div class="form-check">
+  				      <textarea id="newdescrip" class="form-control" rows="2" style="width:95%;"> </textarea>
+  			  </div>
+        </row>
+
+        <row>
+             <button type="submit" class="btn btn-primary">Submit</button>
+             <button type="submit" class="btn btn-danger">Cancelar</button>
+        </row>
+			</form>
+		</section>
+	</div>
