@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: Iván Ramírez
+  body: En Philadelphia yo nací y crecí, con goma de mascar y basquet era feliz
+  picurl: http://doggshiphop.com/hip-hop/the-fresh-prince-of-Bel-Air.jpg
+two:
+  id: 2
+  name: Tatiana Barrios
+  body: Te mudas ahora mismo con tus tíos de Bel Air!
+  picurl: http://sonarfm.cl/sonarfm/site/artic/20160630/imag/foto_0000000120160630101337.jpg

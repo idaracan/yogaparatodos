@@ -18,3 +18,7 @@ h1, h2{
 h3 {
   font-family: 'Open Sans', sans-serif;
 }
+.maxsize{
+  max-width: 500px;
+  max-height: 333px;
+}

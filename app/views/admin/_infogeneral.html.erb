@@ -1,7 +1,7 @@
 <div id="InfoGeneral">
 
 	<!-- Sección del eslogan-->
-	<section class = "container" id="start" style="min-width: 500px;">
+	<section class = "container minwidth" id="start">
 		<div class="panel panel-default" style="width:70%">
 			<div class="panel heading">
 				<h2>Eslogan</h2>
@@ -16,18 +16,11 @@
 					<%= f.submit 'Guardar Eslogan' , :class => 'btn btn-default' %>
 				</p>
 		<% end %>
-			<!--
-			<div class="form-group">
-				 Puede ir el eslogan actual acá
-				<input type="text" class="form-control" id="usr">
-				<button class="btn btn-default" type="submit">Actualizar</button>
-			</div>
-			-->
 		</div>
 	</section>
 
 	<!--Seccion ACERCA DE-->
-	<section class = "container" id="acerca_de" style="min-width: 500px;">
+	<section class = "container minwidth" id="acerca_de">
 		<div class="panel panel-default" style="width:70%">
 			<div class="panel heading">
 				<h2>Acerca de:</h2>
@@ -39,7 +32,6 @@
 						<%= f.label :text %><br>
 						<%= f.text_area :text, :class =>'form-control' %>
 					</p>
-
 					<p>
 						<%= f.submit 'Guardar' , :class => 'btn btn-default' %>
 					</p>
@@ -49,7 +41,7 @@
 	</section>
 
 	<!--Container content-->
-	<section class = "container" id="contacto" style="min-width: 500px;">
+	<section class = "container minwidth" id="contacto">
 		<div class="panel panel-default" style="width:70%">
 			<div class="panel heading">
 				<h2>Contacto:</h2>

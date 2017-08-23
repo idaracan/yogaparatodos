@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  text: MyText
+  text: We fall again, we fall again
 
 two:
-  text: MyText
+  text: When I turn around, I lose vision
+  

@@ -16,6 +16,10 @@
 		background-color: gray;
 }
 
+.minwidth {
+	min-width: 500px;
+}
+
 .movement {
     -webkit-transition: 3s;
     -moz-transition: 3s;
