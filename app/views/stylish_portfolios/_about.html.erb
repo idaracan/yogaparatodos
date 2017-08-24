@@ -1,44 +1,40 @@
 <section id="about" class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Acerca de Nosotras</h2>
-                <p class="lead">
-                  <%= @description.text unless @description.nil?%>
-                </p>
-				<div class="col-lg-6 col-xs-12 text-center">
-					<div class="portfolio-item">
-						<a>
-							<%= image_tag @bio1.picurl, class: "img-portfolio img-responsive maxsize" unless @bio1.nil?%>
-                        </a>
-                        <hr/>
-                        <h3>
-                          <%= @bio1.name unless @bio1.nil?%>
-                        </h3>
-                        <p class="lead">
-                          <%= @bio1.body unless @bio1.nil?%>
-                        </p>
-                    </div>
-                        <h3>Lola Perez</h3>
-                        <p class="lead">Biografía corta del proyecto (por qué, cómo y para qué nació + detalle singular + gota de humor). <a target="_blank" href="http://http://yoga.guiafitness.com//"> Conoce más aquí</a>.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Acerca de Nosotras</h2>
+        <p class="lead">
+        <%= @description.text unless @description.nil?%>
+        </p>
+        <div class="col-lg-6 col-xs-12 text-center">
+          <div class="portfolio-item">
+            <a>
+              <%= image_tag @bio1.picurl, class: "img-portfolio img-responsive maxsize" unless @bio1.nil?%>
+            </a>
+            <hr/>
+            <h3>
+              <%= @bio1.name unless @bio1.nil?%>
+            </h3>
+            <p class="lead">
+              <%= @bio1.body unless @bio1.nil?%>
+            </p>
           </div>
-				</div>
-				<div class="col-lg-6 col-xs-12 text-center">
-					<div class="portfolio-item">
-						<a>
-							<%= image_tag @bio2.picurl, class: "img-portfolio img-responsive maxsize" unless @bio2.nil?%>
-                        </a>
-                        <hr/>
-                        <h3>
-                          <%= @bio2.name unless @bio2.nil?%>
-                        </h3>
-                        <p class="lead">
-                        <h3>
-                          <%= @bio2.body unless @bio2.nil?%>
-                        </h3></p>
-                    </div>
-				</div>
-            </div>
         </div>
+        <div class="col-lg-6 col-xs-12 text-center">
+          <div class="portfolio-item">
+            <a>
+              <%= image_tag @bio2.picurl, class: "img-portfolio img-responsive maxsize" unless @bio2.nil?%>
+            </a>
+            <hr/>
+            <h3>
+              <%= @bio2.name unless @bio2.nil?%>
+            </h3>
+              <p class="lead">
+                <%= @bio2.body unless @bio2.nil?%>
+              </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
